@@ -1,0 +1,90 @@
+/* Configuração da página */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #e0e0e0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Estilo da calculadora */
+.calculadora {
+    background-color: #2b2e4a;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 300px;
+}
+
+/* Estilo da tela */
+.display {
+    width: 90%;
+    height: 60px;
+    background-color: #222;
+    color: #f0f0f0;
+    text-align: right;
+    padding: 15px;
+    font-size: 30px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Layout dos botões */
+.botoes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+/* Estilo dos botões */
+.botao, .igual {
+    padding: 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    background-color: #4e5b70;
+    color: white;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Efeito de hover para os botões */
+.botao:hover, .igual:hover {
+    background-color: #6c798f;
+    transform: translateY(-2px);
+}
+
+/* Botão de igual com destaque */
+.igual {
+    background-color: #ff5e57;
+    color: white;
+    grid-column: span 2;
+    box-shadow: 0 4px 12px rgba(255, 94, 87, 0.4);
+}
+
+/* Efeito de hover para o botão de igual */
+.igual:hover {
+    background-color: #ff3b2f;
+}
+
+/* Botão de apagar e limpar */
+.botao:nth-child(1) {
+    background-color: #e63946;
+}
+
+.botao:nth-child(1):hover {
+    background-color: #d62839;
+}
+
+.botao:nth-child(2) {
+    background-color: #457b9d;
+}
+
+.botao:nth-child(2):hover {
+    background-color: #2a6b9a;
+}
